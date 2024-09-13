@@ -6,11 +6,16 @@
   padding-right: 32px;
 }
 
+body {
+  background: $_main_bg_color;
+}
+
 .section-title {
   font-family: $title-font-family;
   font-size: 22px;
   text-align: center;
   color: $_title_color;
+  margin-bottom: 40px;
 }
 
 .section-text {
