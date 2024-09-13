@@ -1,0 +1,32 @@
+.section {
+  margin-top: 40px;
+}
+.hero-item {
+  display: flex;
+  padding-left: 14px;
+}
+.hero-candy {
+  margin-top: 60px;
+}
+.hero-text {
+  max-width: 152px;
+  margin-left: 14px;
+  margin-right: 14px;
+  line-height: 124%;
+  letter-spacing: 0.01em;
+}
+.hero-link {
+  width: 256px;
+  height: 48px;
+  margin-top: 40px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 4px 4px 5px 1px #f73196;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-img {
+  max-width: 198px;
+  background-size: auto;
+}
