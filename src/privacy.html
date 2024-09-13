@@ -15,10 +15,14 @@
     <link rel="stylesheet" href="./scss/styles.scss" />
   </head>
   <body>
-    <a href="./index.html">Go to back</a>
     <section class="privacy-section">
-      <div class="container">
-        <h2 class="section-title">Privacy Policy</h2>
+      <div class="container privacy-container">
+        <a href="./index.html">
+          <svg class="icon-back-arrow">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </a>
+        <h2 class="section-title privacy-title">Privacy Policy</h2>
         <p class="section-text text-first">
           This privacy policy will explain how our organization uses the
           personal data we collect from you when you use our website.
@@ -34,8 +38,8 @@
       </div>
     </section>
     <section class="marketing-section">
-      <div class="container">
-        <h2 class="section-title">Marketing</h2>
+      <div class="container privacy-container">
+        <h2 class="section-title privacy-title">Marketing</h2>
         <p class="section-text text-first">
           You have the right at any time to stop Starquestzone.com contacting
           you for marketing purposes.
@@ -56,8 +60,11 @@
       </div>
     </section>
     <section class="right-section">
-      <div class="container">
-        <h2 class="section-title">What are your data protection rights?</h2>
+      <div class="container privacy-container">
+        <h2 class="section-title privacy-title privacy-right-title">
+          What are your data <br />
+          protection rights?
+        </h2>
         <p class="section-text">
           Cool play Starquestzone.com vault.com would like to make sure you are
           fully aware of all of your data protection rights. Every user is
@@ -66,19 +73,26 @@
 
         <ul class="right-list">
           <li class="right-item">
-            <picture>
+            <picture class="right-img">
               <source
                 srcset="
-                  ./images/little-candy/Candy-purple-1x.png 1x,
-                  ./images/little-candy/Candy-purple-2x.png 2x
+                  ./images/little-candy/privacy-candy-purple-1x.png 1x,
+                  ./images/little-candy/privacy-candy-purple-2x.png 2x
                 "
+                media="(max-width:1339px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./images/little-candy/privacy-candy-purple-desc-1x.png 1x,
+                  ./images/little-candy/privacy-candy-purple-desc-2x.png 2x
+                "
+                media="(min-width:1440px)"
                 type="image/png"
               />
               <img
-                src="./images/little-candy/Candy-purple-1x.png"
+                src="./images/little-candy/privacy-candy-purple-1x.png"
                 alt="purple candy"
-                width="52"
-                height="52"
               />
             </picture>
             <div>
@@ -90,19 +104,26 @@
             </div>
           </li>
           <li class="right-item">
-            <picture>
+            <picture class="right-img">
               <source
                 srcset="
-                  ./images/little-candy/Candy-red-1x.png 1x,
-                  ./images/little-candy/Candy-red-2x.png 2x
+                  ./images/little-candy/privacy-candy-red-1x.png 1x,
+                  ./images/little-candy/privacy-candy-red-2x.png 2x
                 "
+                media="(max-width:1339px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./images/little-candy/privacy-candy-red-desc-1x.png 1x,
+                  ./images/little-candy/privacy-candy-red-desc-2x.png 2x
+                "
+                media="(min-width:1440px)"
                 type="image/png"
               />
               <img
-                src="./images/little-candy/Candy-red-1x.png"
+                src="./images/little-candy/privacy-candy-red-1x.png"
                 alt="red candy"
-                width="52"
-                height="52"
               />
             </picture>
             <div>
@@ -116,19 +137,26 @@
             </div>
           </li>
           <li class="right-item">
-            <picture>
+            <picture class="right-img">
               <source
                 srcset="
-                  ./images/little-candy/Candy-left-1x.png 1x,
-                  ./images/little-candy/Candy-left-2x.png 2x
+                  ./images/little-candy/privacy-candy-yellow-1x.png 1x,
+                  ./images/little-candy/privacy-candy-yellow-2x.png 2x
                 "
+                media="(max-width:1339px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./images/little-candy/privacy-candy-yellow-desc-1x.png 1x,
+                  ./images/little-candy/privacy-candy-yellow-desc-2x.png 2x
+                "
+                media="(min-width:1440px)"
                 type="image/png"
               />
               <img
-                src="./images/little-candy/Candy-left-1x.png"
+                src="./images/little-candy/privacy-candy-yellow-1x.png"
                 alt="yellow candy"
-                width="52"
-                height="52"
               />
             </picture>
             <div>
@@ -140,19 +168,26 @@
             </div>
           </li>
           <li class="right-item">
-            <picture>
+            <picture class="right-img">
               <source
                 srcset="
-                  ./images/little-candy/Candy-purple-1x.png 1x,
-                  ./images/little-candy/Candy-purple-2x.png 2x
+                  ./images/little-candy/privacy-candy-purple-1x.png 1x,
+                  ./images/little-candy/privacy-candy-purple-2x.png 2x
                 "
+                media="(max-width:1339px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./images/little-candy/privacy-candy-purple-desc-1x.png 1x,
+                  ./images/little-candy/privacy-candy-purple-desc-2x.png 2x
+                "
+                media="(min-width:1440px)"
                 type="image/png"
               />
               <img
-                src="./images/little-candy/Candy-purple-1x.png"
+                src="./images/little-candy/privacy-candy-purple-1x.png"
                 alt="purple candy"
-                width="52"
-                height="52"
               />
             </picture>
             <div>
@@ -164,19 +199,26 @@
             </div>
           </li>
           <li class="right-item">
-            <picture>
+            <picture class="right-img">
               <source
                 srcset="
-                  ./images/little-candy/Candy-red-1x.png 1x,
-                  ./images/little-candy/Candy-red-2x.png 2x
+                  ./images/little-candy/privacy-candy-red-1x.png 1x,
+                  ./images/little-candy/privacy-candy-red-2x.png 2x
                 "
+                media="(max-width:1339px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./images/little-candy/privacy-candy-red-desc-1x.png 1x,
+                  ./images/little-candy/privacy-candy-red-desc-2x.png 2x
+                "
+                media="(min-width:1440px)"
                 type="image/png"
               />
               <img
-                src="./images/little-candy/Candy-red-1x.png"
+                src="./images/little-candy/privacy-candy-red-1x.png"
                 alt="red candy"
-                width="52"
-                height="52"
               />
             </picture>
             <div>
@@ -188,19 +230,26 @@
             </div>
           </li>
           <li class="right-item">
-            <picture>
+            <picture class="right-img">
               <source
                 srcset="
-                  ./images/little-candy/Candy-left-1x.png 1x,
-                  ./images/little-candy/Candy-left-2x.png 2x
+                  ./images/little-candy/privacy-candy-yellow-1x.png 1x,
+                  ./images/little-candy/privacy-candy-yellow-2x.png 2x
                 "
+                media="(max-width:1339px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./images/little-candy/privacy-candy-yellow-desc-1x.png 1x,
+                  ./images/little-candy/privacy-candy-yellow-desc-2x.png 2x
+                "
+                media="(min-width:1440px)"
                 type="image/png"
               />
               <img
-                src="./images/little-candy/Candy-left-1x.png"
+                src="./images/little-candy/privacy-candy-yellow-1x.png"
                 alt="yellow candy"
-                width="52"
-                height="52"
               />
             </picture>
             <div>
@@ -215,9 +264,11 @@
         </ul>
       </div>
     </section>
-    <section>
-      <div class="container">
-        <h2 class="section-title">Changes to our privacy policy</h2>
+    <section class="changes-section">
+      <div class="container privacy-container">
+        <h2 class="section-title privacy-title privacy-change-title">
+          Changes to our privacy policy
+        </h2>
         <p class="section-text">
           Starquestzone.com keeps its privacy policy under regular review and
           places any updates on this web page.
