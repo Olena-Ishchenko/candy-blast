@@ -1,6 +1,8 @@
 .disclaimer-img {
   display: flex;
-  padding-left: 14px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .candy-list {
   margin-top: 36px;
@@ -23,10 +25,13 @@
 }
 .disclaimer-item {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 .disclaimer-text {
-  max-width: 188px;
+  width: 188px;
   line-height: 124%;
   letter-spacing: 0.001em;
 }

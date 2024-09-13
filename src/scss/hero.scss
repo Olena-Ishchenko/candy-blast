@@ -1,22 +1,30 @@
 .section {
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo-hero {
+  display: none;
 }
 .hero-item {
   display: flex;
-  padding-left: 14px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .hero-candy {
-  margin-top: 60px;
+  margin-top: 0;
 }
 .hero-text {
-  max-width: 152px;
+  width: 152px;
   margin-left: 14px;
   margin-right: 14px;
   line-height: 124%;
   letter-spacing: 0.01em;
 }
 .hero-link {
-  width: 256px;
   height: 48px;
   margin-top: 40px;
   border-radius: 8px;
@@ -27,6 +35,28 @@
   align-items: center;
 }
 .link-img {
-  max-width: 198px;
+  width: 198px;
   background-size: auto;
+}
+@include media(desktop) {
+  .hero-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .logo-hero {
+    display: flex;
+    width: 415px;
+  }
+  .logo-hero-img {
+    width: 141px;
+    height: 141px;
+  }
+  .hero-candy {
+    display: none;
+  }
+  .hero-text {
+    width: 624px;
+  }
 }

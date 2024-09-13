@@ -6,32 +6,35 @@
 
 .benefits-list {
   margin-top: 40px;
-  flex-wrap: wrap;
-  text-align: center;
   display: flex;
-  gap: 30px 16px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px 16px;
 }
 .benefits-item {
-  width: 120px;
-  height: 166px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .benefits-img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
+
   margin-top: 20px;
   margin-bottom: 26px;
 }
 .downloads-img {
 }
 .benefits-title-list {
+  width: 115px;
   font-size: 16px;
-  max-width: 115px;
   color: #f73196;
-  font-family: Quicksand;
+  text-align: center;
 }
 .benefits-article {
   font-size: 8px;
   margin-top: 2px;
+  text-align: center;
 }

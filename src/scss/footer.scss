@@ -1,5 +1,8 @@
 .footer-item {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 .logo-footer {
@@ -22,6 +25,8 @@
   margin-top: 4px;
 }
 .privacy {
+  font-family: Quicksand, sans-serif;
+  text-align: right;
   font-size: 6px;
   margin-top: 8px;
   margin-left: 60px;
@@ -32,4 +37,26 @@
   display: grid;
   place-items: center;
   height: 100%;
+  margin-bottom: 16px;
+}
+
+@include media(desktop) {
+  .logo-footer {
+    width: 77px;
+    height: 77px;
+  }
+  .logo-text {
+    font-size: 16px;
+    width: 110px;
+    margin-left: 40px;
+    margin-top: 22px;
+    line-height: 16.5px;
+  }
+  .privacy {
+    font-size: 16px;
+  }
+  .footer-text-policy {
+    font-size: 16px;
+    margin-left: 110px;
+  }
 }
