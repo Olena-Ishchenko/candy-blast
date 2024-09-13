@@ -18,3 +18,18 @@
   font-size: 12px;
   color: $_main_color;
 }
+
+@include media(desktop) {
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .section-title {
+    font-size: 56px;
+  }
+
+  .section-text {
+    font-size: 32px;
+  }
+}
