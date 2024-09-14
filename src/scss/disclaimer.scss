@@ -38,3 +38,16 @@
 .disclaimer-candy-list {
   margin-left: 28px;
 }
+
+@include media(desktop) {
+  .disclaimer-mobile {
+    width: 624px;
+    height: 672px;
+  }
+  .disclaimer-text {
+    width: 624px;
+  }
+  .candy-list {
+    display: none;
+  }
+}

@@ -1,3 +1,16 @@
+.introduction-section {
+}
+.introduction-arrow {
+  width: 12px;
+  height: 14px;
+  fill: $_title_color;
+  position: absolute;
+  left: 10px;
+  position: fixed;
+  top: 45px;
+  left: 10px;
+  z-index: 5;
+}
 .candy-introduction {
   display: flex;
   justify-content: center;
@@ -13,7 +26,7 @@
   &:nth-child(2),
   &:nth-child(3) {
     display: block;
-    margin: 10px;
+    margin: 2px 10px 6px;
   }
 }
 .introduction-text {
@@ -23,10 +36,22 @@
 }
 .introduction-title {
   margin-top: 80px;
+  margin-bottom: 40px;
   padding: 0 44px;
+  line-height: 124%;
+}
+
+.first-title-introduction {
+  margin-bottom: 40px;
 }
 
 @include media(desktop) {
+  .introduction-arrow {
+    width: 26px;
+    height: 26px;
+    top: 102px;
+    left: 102px;
+  }
   .introduction-container {
     padding-left: 189px;
     padding-right: 189px;
@@ -38,6 +63,10 @@
     margin-bottom: 80px;
     padding: 0 219px;
     line-height: 120%;
+  }
+  .first-title-introduction {
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
   .introduction-text {
     line-height: 126%;
