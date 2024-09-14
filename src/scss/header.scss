@@ -1,12 +1,44 @@
+.ih-menu-nav {
+  display: none;
+}
+
+.ih-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 46px;
+  width: 100%;
+}
+
+.ih-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.ih-overlay.is-visible {
+  display: block;
+}
+.logo-text-header {
+  display: flex;
+  gap: 96px;
+}
 .logo-header {
-  width: 24px;
-  height: 24px;
+  width: 52px;
+  height: 52px;
   border-radius: 8px;
 }
 .logo {
   display: flex;
 }
-.logo-text {
+.logo-text-mob {
   color: $_title_color;
   font-family: Fredoka;
   font-size: 8px;
@@ -14,15 +46,92 @@
   line-height: 9.68px;
   text-align: left;
   width: 52px;
-  margin-left: 8px;
-  margin-top: 4px;
+  margin-left: 16px;
+  margin-top: 16px;
 }
-
+.ih-menu-content {
+  display: none;
+}
+.ih-menu-nav {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  font-size: 24px;
+}
 .header-menu {
-  width: 12px;
-  height: 14px;
+  max-width: 24px;
+  max-height: 20px;
   fill: $_title_color;
 }
 
+.mob {
+  display: flex;
+}
+
 @include media(desktop) {
+  .logo-text-header {
+    display: none;
+  }
+  .logo-header {
+    display: none;
+  }
+  .logo-text {
+    display: none;
+  }
+  .ih-menu-nav {
+    display: flex;
+  }
+  .ih-menu-content {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+  .ih-menu-button {
+    display: none;
+  }
+  .mob {
+    display: none;
+  }
+  .ih-menu-item {
+    width: 187px;
+    padding: 22px 0;
+    text-align: center;
+  }
+  .ih-header-container {
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+ih-header {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  z-index: 10;
+
+  top: 0;
+
+  box-shadow: 0 2px px 0 rgba(247, 49, 150, 0.1);
+  background: #fcd1ea;
+}
+
+.ih-menu-button {
+  border: 1px transparent;
+  background: transparent;
+
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ih-icon-menu {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
 }
