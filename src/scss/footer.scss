@@ -13,7 +13,17 @@
 .logo {
   display: flex;
 }
-.logo-text {
+
+.logo {
+  order: 1;
+}
+.footer-text-policy {
+  order: 3;
+}
+.privacy {
+  order: 2;
+}
+.logo-text-footer {
   color: $_title_color;
   font-family: Fredoka;
   font-size: 8px;
@@ -28,12 +38,14 @@
   font-family: Quicksand, sans-serif;
   text-align: right;
   font-size: 6px;
-  margin-top: 8px;
+
   margin-left: 60px;
+  margin-right: 5px;
 }
 .footer-text-policy {
   font-size: 6px;
   margin-top: 16px;
+  margin-left: 70px;
   display: grid;
   place-items: center;
   height: 100%;
@@ -41,6 +53,12 @@
 }
 
 @include media(desktop) {
+  .footer-text-policy {
+    order: 2;
+  }
+  .privacy {
+    order: 3;
+  }
   .footer-item {
     margin-bottom: 32px;
   }
@@ -51,15 +69,27 @@
   .logo-text {
     font-size: 16px;
     width: 110px;
+    height: 38px;
     margin-left: 40px;
-    margin-top: 22px;
+    margin-top: 18px;
     line-height: 16.5px;
   }
   .privacy {
     font-size: 16px;
+    margin-top: 0;
+    margin-left: 0;
   }
   .footer-text-policy {
     font-size: 16px;
     margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .logo-text-footer {
+    font-size: 16px;
+    width: 110px;
+    line-height: 18.68px;
+    margin-top: 20px;
+    margin-left: 38px;
   }
 }

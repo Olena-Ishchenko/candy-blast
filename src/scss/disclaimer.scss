@@ -1,3 +1,6 @@
+.disclaimer-card {
+  margin-top: 40px;
+}
 .disclaimer-img {
   display: flex;
   justify-content: center;
@@ -16,6 +19,7 @@
 .disclaimer-mobile {
   margin-left: 26px;
   margin-top: 16px;
+
   transform: rotate(-8deg);
 }
 .disclaimer-title {
@@ -40,14 +44,34 @@
 }
 
 @include media(desktop) {
+  .disclaimer-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 160px;
+  }
+  .disclaimer-img {
+    order: 2;
+  }
+
+  .disclaimer-item {
+    order: 1;
+  }
+  .disclaimer-item {
+    margin-top: 32px;
+  }
   .disclaimer-mobile {
     width: 624px;
     height: 672px;
+    transform: rotate(0deg);
   }
   .disclaimer-text {
     width: 624px;
+    text-align: center;
   }
   .candy-list {
     display: none;
+  }
+  .disclaimer-title {
+    margin-top: 66px;
   }
 }

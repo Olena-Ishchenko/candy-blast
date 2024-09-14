@@ -1,5 +1,8 @@
-<header>
-  <div class="container">
+<div id="overlay" class="ih-overlay"></div>
+<header  class="ih-header">
+  <div class="container ih-header-container">
+    <div class="logo-text-header">
+    <div class="mob">
     <a class="logo" href="./index.html" target="_self"></a>
       <picture>
         <source
@@ -9,10 +12,77 @@
         />
         <img class="logo-header" src="images/Logo-1x.png" alt="Logo" />
       </picture>
-      <p class="logo-text">Candy Blast: Sugar Splash</p>
+      <p class="logo-text-mob ">Candy Blast: Sugar Splash</p>
     </a>
-    <svg class="header-menu">
-      <use href="./images/sprite.svg#icon-menu"></use>
-    </svg>
+    </div>
+    <button
+      id="HEADER_MENU_JS"
+      class="ih-menu-button"
+      title="open menu"
+      type="button"
+    >
+      <svg class="ih-icon-menu header-menu">
+        <use href="/images/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+    </div>
+      <div class="ih-menu-content">
+        <picture class="candy-header">
+        <source
+          srcset="
+            ./images/little-candy/Candy-left-1x.png 1x,
+            ./images/little-candy/Candy-left-2x.png 2x
+          "
+          media="(min-width: 320px)"
+          type="image/png"
+        />
+        <img
+          loading="lazy"
+          src="./images/little-candy/Candy-left-1x.png"
+          alt="photo desc"
+          width="77"
+          height="77"
+        />
+      </picture>
+        <ul id="MENU_NAV_JS" class="ih-menu-nav">
+           <li class="ih-menu-item"><a href="#benefits">
+            
+            Benefits
+          </a></li>
+          <li class="ih-menu-item"><a href="#about-the-game">
+            About the Game
+          </a></li>
+          <li class="ih-menu-item"><a href="#how-to-play">
+           
+            How to Play
+          </a></li>
+          <li class="ih-menu-item"><a href="#gallery">
+             Gallery
+          </a></li>
+          <li class="ih-menu-item"><a href="#advantages">
+            
+            Advantages
+          </a></li>
+        </ul>
+        <picture class="candy-header">
+        <source
+          srcset="
+            ./images/little-candy/Candy-left-1x.png 1x,
+            ./images/little-candy/Candy-left-2x.png 2x
+          "
+          media="(min-width: 320px)"
+          type="image/png"
+        />
+        <img
+          loading="lazy"
+          src="./images/little-candy/Candy-left-1x.png"
+          alt="photo desc"
+          width="77"
+          height="77"
+        />
+      </picture>
+      </div>
+      
+    </section>
   </div>
 </header>
