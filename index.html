@@ -13,11 +13,14 @@
     <title>Candy Blast Sugar Splash</title>
     
     <script type="module" crossorigin src="/candy-blast/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/candy-blast/assets/styles-99f780dd.css">
+    <link rel="stylesheet" href="/candy-blast/assets/styles-058fffbc.css">
   </head>
   <body>
-    <header>
-  <div class="container">
+    <div id="overlay" class="ih-overlay"></div>
+<header  class="ih-header">
+  <div class="container ih-header-container">
+    <div class="logo-text-header">
+    <div class="mob">
     <a class="logo" href="./index.html" target="_self"></a>
       <picture>
         <source
@@ -27,11 +30,72 @@
         />
         <img class="logo-header" src="/candy-blast/assets/Logo-1x-caab00a8.png" alt="Logo" />
       </picture>
-      <p class="logo-text">Candy Blast: Sugar Splash</p>
+      <p class="logo-text-mob ">Candy Blast: Sugar Splash</p>
     </a>
-    <svg class="header-menu">
-      <use href="/candy-blast/assets/sprite-cff187e3.svg#icon-menu"></use>
-    </svg>
+    </div>
+    <button
+      id="HEADER_MENU_JS"
+      class="ih-menu-button"
+      title="open menu"
+      type="button"
+    >
+      <svg class="ih-icon-menu header-menu">
+        <use href="/candy-blast/assets/sprite-cff187e3.svg#icon-menu"></use>
+      </svg>
+    </button>
+    </div>
+      <div class="ih-menu-content">
+        <picture class="candy-header">
+        <source
+          srcset="/candy-blast/assets/Candy-left-1x-2e8d5afd.png 1x, /candy-blast/assets/Candy-left-2x-9ee0eef6.png 2x"
+          media="(min-width: 320px)"
+          type="image/png"
+        />
+        <img
+          loading="lazy"
+          src="/candy-blast/assets/Candy-left-1x-2e8d5afd.png"
+          alt="photo desc"
+          width="77"
+          height="77"
+        />
+      </picture>
+        <ul id="MENU_NAV_JS" class="ih-menu-nav">
+           <li class="ih-menu-item"><a href="#benefits">
+            
+            Benefits
+          </a></li>
+          <li class="ih-menu-item"><a href="#about-the-game">
+            About the Game
+          </a></li>
+          <li class="ih-menu-item"><a href="#how-to-play">
+           
+            How to Play
+          </a></li>
+          <li class="ih-menu-item"><a href="#gallery">
+             Gallery
+          </a></li>
+          <li class="ih-menu-item"><a href="#advantages">
+            
+            Advantages
+          </a></li>
+        </ul>
+        <picture class="candy-header">
+        <source
+          srcset="/candy-blast/assets/Candy-left-1x-2e8d5afd.png 1x, /candy-blast/assets/Candy-left-2x-9ee0eef6.png 2x"
+          media="(min-width: 320px)"
+          type="image/png"
+        />
+        <img
+          loading="lazy"
+          src="/candy-blast/assets/Candy-left-1x-2e8d5afd.png"
+          alt="photo desc"
+          width="77"
+          height="77"
+        />
+      </picture>
+      </div>
+      
+    </section>
   </div>
 </header>
 
@@ -180,74 +244,76 @@
           />
         </picture>
       </div>
-      <h2 class="section-title disclaimer-title">Disclaimer</h2>
-      <div class="disclaimer-item">
-        <p class="section-text disclaimer-text">
-          Playing games should always be a fun and enjoyable experience.
-          However, it's important to play responsibly and in moderation.
-          Remember to take regular breaks, be mindful of your time, and avoid
-          letting gaming interfere with your daily responsibilities or
-          well-being. If you find that gaming is negatively affecting your life,
-          consider seeking guidance or support. Play wisely, stay balanced, and
-          enjoy the game responsibly!
-        </p>
-        <ul class="candy-list disclaimer-candy-list">
-          <li class="candy-item disclaimer-candy-item">
-            <picture>
-              <source
-                srcset="/candy-blast/assets/Candy-purple-1x-ec97e0da.png 1x, /candy-blast/assets/Candy-purple-2x-e38c2eb5.png 2x"
-                media="(min-width: 320px)"
-                type="image/png"
-              />
-              <img
-                loading="lazy"
-                src="/candy-blast/assets/Candy-purple-1x-ec97e0da.png"
-                alt="photo desc"
-                width="24"
-                height="24"
-              />
-            </picture>
-          </li>
-          <li class="candy-item disclaimer-candy-item">
-            <picture>
-              <source
-                srcset="/candy-blast/assets/Candy-red-1x-4129d056.png 1x, /candy-blast/assets/Candy-red-2x-78e09fb2.png 2x"
-                media="(min-width: 320px)"
-                type="image/png"
-              />
-              <img
-                class="candy-img"
-                loading="lazy"
-                src="/candy-blast/assets/Candy-red-1x-4129d056.png"
-                alt="photo desc"
-                width="24"
-                height="24"
-              />
-            </picture>
-          </li>
-          <li class="candy-item disclaimer-candy-item">
-            <picture>
-              <source
-                srcset="/candy-blast/assets/Candy-left-1x-2e8d5afd.png 1x, /candy-blast/assets/Candy-left-2x-9ee0eef6.png 2x"
-                media="(min-width: 320px)"
-                type="image/png"
-              />
-              <img
-                loading="lazy"
-                src="/candy-blast/assets/Candy-left-1x-2e8d5afd.png"
-                alt="photo desc"
-                width="24"
-                height="24"
-              />
-            </picture>
-          </li>
-        </ul>
+      <div class="title-text">
+        <h2 class="section-title disclaimer-title">Disclaimer</h2>
+        <div class="disclaimer-item">
+          <p class="section-text disclaimer-text">
+            Playing games should always be a fun and enjoyable experience.
+            However, it's important to play responsibly and in moderation.
+            Remember to take regular breaks, be mindful of your time, and avoid
+            letting gaming interfere with your daily responsibilities or
+            well-being. If you find that gaming is negatively affecting your
+            life, consider seeking guidance or support. Play wisely, stay
+            balanced, and enjoy the game responsibly!
+          </p>
+          <ul class="candy-list disclaimer-candy-list">
+            <li class="candy-item disclaimer-candy-item">
+              <picture>
+                <source
+                  srcset="/candy-blast/assets/Candy-purple-1x-ec97e0da.png 1x, /candy-blast/assets/Candy-purple-2x-e38c2eb5.png 2x"
+                  media="(min-width: 320px)"
+                  type="image/png"
+                />
+                <img
+                  loading="lazy"
+                  src="/candy-blast/assets/Candy-purple-1x-ec97e0da.png"
+                  alt="photo desc"
+                  width="24"
+                  height="24"
+                />
+              </picture>
+            </li>
+            <li class="candy-item disclaimer-candy-item">
+              <picture>
+                <source
+                  srcset="/candy-blast/assets/Candy-red-1x-4129d056.png 1x, /candy-blast/assets/Candy-red-2x-78e09fb2.png 2x"
+                  media="(min-width: 320px)"
+                  type="image/png"
+                />
+                <img
+                  class="candy-img"
+                  loading="lazy"
+                  src="/candy-blast/assets/Candy-red-1x-4129d056.png"
+                  alt="photo desc"
+                  width="24"
+                  height="24"
+                />
+              </picture>
+            </li>
+            <li class="candy-item disclaimer-candy-item">
+              <picture>
+                <source
+                  srcset="/candy-blast/assets/Candy-left-1x-2e8d5afd.png 1x, /candy-blast/assets/Candy-left-2x-9ee0eef6.png 2x"
+                  media="(min-width: 320px)"
+                  type="image/png"
+                />
+                <img
+                  loading="lazy"
+                  src="/candy-blast/assets/Candy-left-1x-2e8d5afd.png"
+                  alt="photo desc"
+                  width="24"
+                  height="24"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-    <section>
+    <section id="benefits">
   <div class="container">
     <h2 class="section-title benefits-title">Benefits</h2>
     <ul class="benefits-list">
@@ -330,10 +396,10 @@
   </div>
 </section>
 
-    <section></section>
+    <section id="about-the-game"></section>
   <div class="container"></div>
 </section>
-    <section class="how-to-play-section">
+    <section id="how-to-play" class="how-to-play-section">
   <div class="container">
     <h2 class="section-title">How to Play</h2>
     <ul class="how-to-play-list">
@@ -466,16 +532,16 @@
   </div>
 </section>
 
-    <section></section>
+    <section id="gallery"></section>
   <div class="container"></div>
 </section>
-    <section></section>
+    <section id="advantages"></section>
   <div class="container"></div>
 </section>
     <section>
   <div class="container">
     <div class="footer-item">
-      <a class="logo logo-hero" href="./index.html" target="_self">
+      <a class="logo" href="./index.html" target="_self">
         <picture>
           <source
             srcset="/candy-blast/assets/Logo-footer-1x-957ab227.png 1x, /candy-blast/assets/Logo-footer-2x-4804e458.png 2x"
@@ -484,7 +550,7 @@
           />
           <img class="logo-footer" src="/candy-blast/assets/Logo-footer-1x-957ab227.png" alt="Logo" />
         </picture>
-        <p class="logo-text">Candy Blast: Sugar Splash</p>
+        <p class="logo-text-footer">Candy Blast: Sugar Splash</p>
       </a>
       <p class="footer-text-policy">
         All rights reserved starquestzone.com | 2024
