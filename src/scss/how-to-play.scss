@@ -1,0 +1,97 @@
+.how-to-play-section {
+  margin-top: 160px;
+}
+
+.how-to-play-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.how-to-play-item {
+  display: flex;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 16px 15px;
+  box-shadow: 4px 4px 8px 0 rgba(247, 49, 150, 0.5);
+}
+
+.how-to-play-item:nth-child(1) {
+  background: #ffe6ce;
+}
+
+.how-to-play-item:nth-child(2) {
+  background: #fcd1ea;
+}
+
+.how-to-play-item:nth-child(3) {
+  background: #ddc0f6;
+}
+
+.how-to-play-item:nth-child(4) {
+  background: #fcd1ea;
+}
+
+.how-to-play-item:nth-child(5) {
+  background: #ffe6ce;
+}
+
+.how-to-play-item:nth-child(6) {
+  background: #ddc0f6;
+}
+
+.how-to-play-img {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+@include media(desktop) {
+  .how-to-play-section {
+    margin-top: 160px;
+  }
+
+  .how-to-play-list {
+    margin-top: 80px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .how-to-play-item {
+    max-width: 624px;
+    padding: 32px 16px;
+  }
+
+  .how-to-play-item:nth-child(1) {
+    order: 1;
+  }
+
+  .how-to-play-item:nth-child(2) {
+    order: 3;
+  }
+
+  .how-to-play-item:nth-child(3) {
+    order: 5;
+  }
+
+  .how-to-play-item:nth-child(4) {
+    background: #ddc0f6;
+    order: 2;
+  }
+
+  .how-to-play-item:nth-child(5) {
+    background: #ffe6ce;
+    order: 4;
+  }
+
+  .how-to-play-item:nth-child(6) {
+    background: #fcd1ea;
+    order: 6;
+  }
+
+  .how-to-play-img {
+    min-width: 48px;
+    min-height: 48px;
+  }
+}
