@@ -14,7 +14,7 @@
   display: flex;
 }
 .logo-text {
-  color: #f73196;
+  color: $_title_color;
   font-family: Fredoka;
   font-size: 8px;
   font-weight: 600;
@@ -41,6 +41,9 @@
 }
 
 @include media(desktop) {
+  .footer-item {
+    margin-bottom: 32px;
+  }
   .logo-footer {
     width: 77px;
     height: 77px;
@@ -57,6 +60,6 @@
   }
   .footer-text-policy {
     font-size: 16px;
-    margin-left: 110px;
+    margin-left: 0;
   }
 }
