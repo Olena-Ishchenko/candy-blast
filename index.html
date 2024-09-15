@@ -13,11 +13,10 @@
     <title>Candy Blast Sugar Splash</title>
     
     <script type="module" crossorigin src="/candy-blast/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/candy-blast/assets/styles-058fffbc.css">
+    <link rel="stylesheet" href="/candy-blast/assets/styles-1d67e12f.css">
   </head>
   <body>
-    <div id="overlay" class="ih-overlay"></div>
-<header  class="ih-header">
+    <header  class="ih-header">
   <div class="container ih-header-container">
     <div class="logo-text-header">
     <div class="mob">
@@ -34,12 +33,12 @@
     </a>
     </div>
     <button
-      id="HEADER_MENU_JS"
+      id="openModalBtn"
       class="ih-menu-button"
       title="open menu"
       type="button"
     >
-      <svg class="ih-icon-menu header-menu">
+      <svg class="header-menu">
         <use href="/candy-blast/assets/sprite-cff187e3.svg#icon-menu"></use>
       </svg>
     </button>
@@ -96,8 +95,87 @@
       </div>
       
     </section>
-  </div>
+  
 </header>
+
+    <section>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button class="ih-menu-button close-btn">
+        <svg class="header-menu close-svg">
+          <use href="/candy-blast/assets/sprite-cff187e3.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="">
+        <li class="modal-item">
+          <a class="modal-nav" href="#benefits">
+            <img
+              class="modal-img"
+              loading="lazy"
+              src="/candy-blast/assets/Candy-purple-1x-ec97e0da.png"
+              alt="photo desc"
+              width="16"
+              height="16"
+            />
+            Benefits
+          </a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-nav" href="#about-the-game">
+            <img
+              class="modal-img"
+              loading="lazy"
+              src="/candy-blast/assets/Candy-red-1x-4129d056.png"
+              alt="photo desc"
+              width="22"
+              height="22"
+            />
+            About the Game
+          </a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-nav" href="#how-to-play">
+            <img
+              class="modal-img"
+              loading="lazy"
+              src="/candy-blast/assets/Candy-purple-1x-ec97e0da.png"
+              alt="photo desc"
+              width="16"
+              height="16"
+            />
+            How to Play
+          </a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-nav" class="modal-nav" href="#gallery">
+            <img
+              class="modal-img"
+              loading="lazy"
+              src="/candy-blast/assets/Candy-red-1x-4129d056.png"
+              alt="photo desc"
+              width="22"
+              height="22"
+            />
+            Gallery
+          </a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-nav" href="#advantages">
+            <img
+              class="modal-img"
+              loading="lazy"
+              src="/candy-blast/assets/Candy-left-1x-2e8d5afd.png"
+              alt="photo desc"
+              width="16"
+              height="16"
+            />
+            Advantages
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
     <section class="hero-section">
   <div class="container hero-container">
