@@ -1,0 +1,39 @@
+.gallery-img {
+  border-radius: 8px;
+  width: 120px;
+  // height: 180px;
+  object-fit: cover;
+  object-position: center;
+}
+
+// .swiper-gallery {
+//   position: relative;
+// }
+
+.gallery-container {
+  position: relative;
+}
+
+// .swiper-btn-prev,
+// .swiper-btn-next {
+//   fill: $_title_color;
+//   width: 12px;
+//   height: 24px;
+// }
+
+// .swiper-btn-next {
+//   transform: rotate(180deg);
+// }
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: $_title_color;
+  font-size: 24px !important;
+  position: absolute;
+}
+
+@include media(desktop) {
+  .gallery-img {
+    width: 405px;
+  }
+}
