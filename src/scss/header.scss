@@ -63,9 +63,62 @@
   max-height: 20px;
   fill: $_title_color;
 }
-
 .mob {
   display: flex;
+}
+.ih-menu-button {
+  border: 1px transparent;
+  background: transparent;
+
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий фон */
+}
+
+/* Вміст модалки */
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 40px 50px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+/* Кнопка закриття */
+.close-btn {
+  float: right;
+  cursor: pointer;
+}
+.close-svg {
+  width: 12px;
+  height: 12px;
+}
+
+.modal-item {
+  margin-bottom: 32px;
+}
+
+.modal-img {
+}
+
+.modal-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @include media(desktop) {
@@ -117,21 +170,4 @@ ih-header {
 
   box-shadow: 0 2px px 0 rgba(247, 49, 150, 0.1);
   background: #fcd1ea;
-}
-
-.ih-menu-button {
-  border: 1px transparent;
-  background: transparent;
-
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.ih-icon-menu {
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
 }
