@@ -13,7 +13,9 @@
     <title>Candy Blast Sugar Splash</title>
     
     <script type="module" crossorigin src="/candy-blast/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/candy-blast/assets/styles-1d67e12f.css">
+    <link rel="modulepreload" crossorigin href="/candy-blast/assets/vendor-02d23383.js">
+    <link rel="stylesheet" href="/candy-blast/assets/vendor-0ded8c46.css">
+    <link rel="stylesheet" href="/candy-blast/assets/styles-4f2b11cf.css">
   </head>
   <body>
     <header  class="ih-header">
@@ -117,7 +119,7 @@
               width="16"
               height="16"
             />
-            Benefits
+            <p class="modal-nav-text">Benefits</p>
           </a>
         </li>
         <li class="modal-item">
@@ -130,7 +132,7 @@
               width="22"
               height="22"
             />
-            About the Game
+            <p class="modal-nav-text">About the Game</p>
           </a>
         </li>
         <li class="modal-item">
@@ -143,11 +145,11 @@
               width="16"
               height="16"
             />
-            How to Play
+            <p class="modal-nav-text">How to Play</p>
           </a>
         </li>
         <li class="modal-item">
-          <a class="modal-nav" class="modal-nav" href="#gallery">
+          <a class="modal-nav" href="#gallery">
             <img
               class="modal-img"
               loading="lazy"
@@ -156,7 +158,7 @@
               width="22"
               height="22"
             />
-            Gallery
+            <p class="modal-nav-text">Gallery</p>
           </a>
         </li>
         <li class="modal-item">
@@ -169,7 +171,7 @@
               width="16"
               height="16"
             />
-            Advantages
+            <p class="modal-nav-text">Advantages</p>
           </a>
         </li>
       </ul>
@@ -610,9 +612,143 @@
   </div>
 </section>
 
-    <section id="gallery"></section>
-  <div class="container"></div>
+    <section id="gallery" class="gallery-section">
+  <div class="container gallery-container">
+    <h2 class="section-title">Gallery</h2>
+    <div class="swiper-gallery">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <source
+                srcset="/candy-blast/assets/01-1x-fd68c863.png 1x, /candy-blast/assets/01-1x-fd68c863.png 2x"
+                type="image/png"
+              />
+              <img
+                class="gallery-img"
+                src="/candy-blast/assets/01-1x-fd68c863.png"
+                alt="game photo"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <source
+                srcset="/candy-blast/assets/02-1x-99448c43.png 1x, /candy-blast/assets/02-1x-99448c43.png 2x"
+                type="image/png"
+              />
+              <img
+                class="gallery-img"
+                src="/candy-blast/assets/02-1x-99448c43.png"
+                alt="game photo"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <source
+                srcset="/candy-blast/assets/03-1x-6e6f3004.png 1x, /candy-blast/assets/03-1x-6e6f3004.png 2x"
+                type="image/png"
+              />
+              <img
+                class="gallery-img"
+                src="/candy-blast/assets/03-1x-6e6f3004.png"
+                alt="game photo"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <source
+                srcset="/candy-blast/assets/4-1x-2d608ad1.png 1x, /candy-blast/assets/4-1x-2d608ad1.png 2x"
+                type="image/png"
+              />
+              <img
+                class="gallery-img"
+                src="/candy-blast/assets/4-1x-2d608ad1.png"
+                alt="game photo"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <source
+                srcset="/candy-blast/assets/5-1x-b8ca1b43.png 1x, /candy-blast/assets/5-1x-b8ca1b43.png 2x"
+                type="image/png"
+              />
+              <img
+                class="gallery-img"
+                src="/candy-blast/assets/5-1x-b8ca1b43.png"
+                alt="game photo"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <source
+                srcset="/candy-blast/assets/6-1x-1c18c228.png 1x, /candy-blast/assets/6-1x-1c18c228.png 2x"
+                type="image/png"
+              />
+              <img
+                class="gallery-img"
+                src="/candy-blast/assets/6-1x-1c18c228.png"
+                alt="game photo"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <source
+                srcset="/candy-blast/assets/7-1x-4a394439.png 1x, /candy-blast/assets/7-1x-4a394439.png 2x"
+                type="image/png"
+              />
+              <img
+                class="gallery-img"
+                src="/candy-blast/assets/7-1x-4a394439.png"
+                alt="game photo"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <source
+                srcset="/candy-blast/assets/8-1x-ef884e61.png 1x, /candy-blast/assets/8-1x-ef884e61.png 2x"
+                type="image/png"
+              />
+              <img
+                class="gallery-img"
+                src="/candy-blast/assets/8-1x-ef884e61.png"
+                alt="game photo"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture class="gallery-img">
+              <source
+                srcset="/candy-blast/assets/9-1x-940c8b05.png 1x, /candy-blast/assets/9-1x-940c8b05.png 2x"
+                type="image/png"
+              />
+              <img
+                class="gallery-img"
+                src="/candy-blast/assets/9-1x-940c8b05.png"
+                alt="game photo"
+              />
+            </picture>
+          </div>
+          ...
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev swiper-btn-next"></div>
+        <div class="swiper-button-next swiper-btn-prev"></div>
+
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </div>
 </section>
+
     <section id="advantages"></section>
   <div class="container"></div>
 </section>
