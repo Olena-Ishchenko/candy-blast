@@ -1,29 +1,22 @@
+.gallery-section {
+  margin-top: 40px;
+}
+
 .gallery-img {
   border-radius: 8px;
   width: 120px;
-  // height: 180px;
   object-fit: cover;
   object-position: center;
 }
 
-// .swiper-gallery {
-//   position: relative;
-// }
-
-.gallery-container {
+.swiper-gallery {
   position: relative;
+  margin-top: 40px;
 }
 
-// .swiper-btn-prev,
-// .swiper-btn-next {
-//   fill: $_title_color;
-//   width: 12px;
-//   height: 24px;
-// }
-
-// .swiper-btn-next {
-//   transform: rotate(180deg);
-// }
+.swiper-gallery .swiper {
+  position: static;
+}
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -32,7 +25,31 @@
   position: absolute;
 }
 
+.swiper-button-prev::after {
+  right: 50px;
+}
+
+.swiper-button-next::after {
+  left: 50px;
+}
+
+.swiper-pagination-bullet {
+  background: $_title_color !important;
+}
+
+.swiper-pagination {
+  bottom: -30px !important;
+}
+
 @include media(desktop) {
+  .gallery-section {
+    margin-top: 160px;
+  }
+
+  .swiper-gallery {
+    margin-top: 80px;
+  }
+
   .gallery-img {
     width: 405px;
   }

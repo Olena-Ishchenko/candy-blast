@@ -1,6 +1,7 @@
 import Swiper from 'swiper';
 import {
   Navigation,
+  Pagination,
   Scrollbar,
   EffectCoverflow,
   Keyboard,
@@ -11,7 +12,14 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const swiperParams = {
-  modules: [Navigation, Scrollbar, EffectCoverflow, Keyboard, Mousewheel],
+  modules: [
+    Pagination,
+    Navigation,
+    Scrollbar,
+    EffectCoverflow,
+    Keyboard,
+    Mousewheel,
+  ],
 
   breakpoints: {
     320: { slidesPerView: 2, spaceBetween: 16 },
@@ -29,7 +37,7 @@ const swiperParams = {
 
   pagination: {
     el: '.swiper-pagination',
-    // clickable: true,
+    clickable: true,
   },
 
   keyboard: {
