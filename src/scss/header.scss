@@ -19,7 +19,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 5;
   display: none;
 }
 
@@ -80,7 +80,7 @@
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   left: 0;
   top: 0;
   width: 100%;
@@ -91,10 +91,10 @@
 /* Вміст модалки */
 .modal-content {
   background-color: white;
-  margin: 15% auto;
+  margin: 138px 32px;
   padding: 40px 50px;
   border-radius: 8px;
-  width: 300px;
+  width: 256px;
   text-align: center;
 }
 
@@ -102,23 +102,30 @@
 .close-btn {
   float: right;
   cursor: pointer;
+  position: fixed;
+  top: 153px;
+  right: 57px;
+  z-index: 999;
 }
 .close-svg {
   width: 12px;
   height: 12px;
 }
 
-.modal-item {
+.modal-item:not(:last-child) {
   margin-bottom: 32px;
-}
-
-.modal-img {
 }
 
 .modal-nav {
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 18px;
+  letter-spacing: -0.03em;
+}
+
+.modal-nav-text:hover,
+.modal-nav-text:active {
+  color: #f73196;
 }
 
 @include media(desktop) {
@@ -157,17 +164,17 @@
   }
 }
 
-ih-header {
+.ih-header {
   display: flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   position: sticky;
-  z-index: 10;
+  z-index: 4;
 
   top: 0;
 
-  box-shadow: 0 2px px 0 rgba(247, 49, 150, 0.1);
+  box-shadow: 0 1px 1px 0 rgba(247, 49, 150, 0.1);
   background: #fcd1ea;
 }

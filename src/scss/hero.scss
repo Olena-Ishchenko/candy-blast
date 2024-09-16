@@ -39,11 +39,22 @@
   justify-content: center;
   align-items: center;
 }
+.hero-link:hover {
+  background-color: rgba(247, 49, 150, 0.3);
+}
+.hero-link:active {
+  background-image: linear-gradient(to right, #ddc0f6 0%, #f73196 100%);
+}
+
 .link-img {
   width: 198px;
   background-size: auto;
 }
 @include media(desktop) {
+  .hero-section {
+    margin-top: 80px;
+  }
+
   .hero-container {
     padding-left: 0;
     padding-right: 0;
@@ -80,8 +91,9 @@
     margin-bottom: 40px;
   }
   .hero-link {
-    margin: 48px 466px 0;
+    margin: 42px auto 0;
     height: 84px;
+    width: 406px;
   }
   .link-img {
     width: 376px;
