@@ -1,6 +1,7 @@
 const modal = document.getElementById('modal');
 const openModalBtn = document.getElementById('openModalBtn');
 const closeModalBtn = document.querySelector('.close-btn');
+const listItems = document.querySelectorAll('.modal-item');
 
 // Відкрити модалку
 openModalBtn.onclick = function () {
@@ -18,3 +19,10 @@ window.onclick = function (event) {
     modal.style.display = 'none';
   }
 };
+
+// Закрити модалку при натисканні на пункт списку
+listItems.forEach(function (item) {
+  item.onclick = function () {
+    modal.style.display = 'none';
+  };
+});
