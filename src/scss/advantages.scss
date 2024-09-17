@@ -1,5 +1,5 @@
 .advantages-section {
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
 .advantage-title {
@@ -70,7 +70,7 @@
 
 @include media(desktop) {
   .advantages-section {
-    margin-top: 160px;
+    padding-top: 160px;
   }
 
   .advantage-title {

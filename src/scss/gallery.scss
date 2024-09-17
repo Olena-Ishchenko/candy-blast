@@ -1,5 +1,5 @@
 .gallery-section {
-  margin-top: 40px;
+  padding-top: 40px;
 }
 
 .gallery-img {
@@ -43,7 +43,7 @@
 
 @include media(desktop) {
   .gallery-section {
-    margin-top: 160px;
+    padding-top: 160px;
   }
 
   .swiper-gallery {

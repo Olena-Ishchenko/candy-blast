@@ -1,5 +1,10 @@
 .about-section {
-  margin-top: 80px;
+  padding-top: 80px;
+}
+
+.about-title {
+  width: 152px;
+  margin: 0 auto;
 }
 
 .about-list {
@@ -28,6 +33,15 @@
 }
 
 @include media(desktop) {
+  .about-section {
+    padding-top: 160px;
+  }
+
+  .about-title {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .swiper-about {
     display: none;
   }
