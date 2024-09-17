@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/candy-blast/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/candy-blast/assets/vendor-ee1274eb.js">
     <link rel="stylesheet" href="/candy-blast/assets/vendor-0ded8c46.css">
-    <link rel="stylesheet" href="/candy-blast/assets/styles-a16ea4fd.css">
+    <link rel="stylesheet" href="/candy-blast/assets/styles-6dbe6a2d.css">
   </head>
   <body>
     <header  class="ih-header">
@@ -61,21 +61,21 @@
         />
       </picture>
         <ul id="MENU_NAV_JS" class="ih-menu-nav">
-           <li class="ih-menu-item"><a href="#benefits">
+           <li class="ih-menu-item"><a class="menu-link" href="#benefits">
             
             Benefits
           </a></li>
-          <li class="ih-menu-item"><a href="#about-the-game">
+          <li class="ih-menu-item"><a class="menu-link" href="#about-the-game">
             About the Game
           </a></li>
-          <li class="ih-menu-item"><a href="#how-to-play">
+          <li class="ih-menu-item"><a class="menu-link" href="#how-to-play">
            
             How to Play
           </a></li>
-          <li class="ih-menu-item"><a href="#gallery">
+          <li class="ih-menu-item"><a class="menu-link" href="#gallery">
              Gallery
           </a></li>
-          <li class="ih-menu-item"><a href="#advantages">
+          <li class="ih-menu-item"><a class="menu-link" href="#advantages">
             
             Advantages
           </a></li>
@@ -1116,23 +1116,29 @@
     <section>
   <div class="container">
     <div class="footer-item">
-      <a class="logo" href="./index.html" target="_self">
-        <picture>
-          <source
-            srcset="/candy-blast/assets/Logo-footer-1x-957ab227.png 1x, /candy-blast/assets/Logo-footer-2x-4804e458.png 2x"
-            media="(min-width: 320px)"
-            type="image/png"
-          />
-          <img class="logo-footer" src="/candy-blast/assets/Logo-footer-1x-957ab227.png" alt="Logo" />
-        </picture>
-        <p class="logo-text-footer">Candy Blast: Sugar Splash</p>
-      </a>
+      <div class="footer-logo-text">
+        <a class="logo" href="./index.html" target="_self">
+          <picture>
+            <source
+              srcset="/candy-blast/assets/Logo-footer-1x-957ab227.png 1x, /candy-blast/assets/Logo-footer-2x-4804e458.png 2x"
+              media="(min-width: 320px)"
+              type="image/png"
+            />
+            <img
+              class="logo-footer"
+              src="/candy-blast/assets/Logo-footer-1x-957ab227.png"
+              alt="Logo"
+            />
+          </picture>
+          <p class="logo-text-footer">Candy Blast: Sugar Splash</p>
+        </a>
+      </div>
       <p class="footer-text-policy">
         All rights reserved starquestzone.com | 2024
       </p>
       <div class="privacy">
-        <a href="privacy.html">Privacy Policy</a> /
-        <a href="introduction.html">Terms and Conditions</a>
+        <a href="privacy.html" class="link-privacy">Privacy Policy</a> /
+        <a href="introduction.html" class="link-terms">Terms and Conditions</a>
       </div>
     </div>
   </div>
