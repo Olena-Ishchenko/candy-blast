@@ -1,5 +1,5 @@
 .how-to-play-section {
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
 .how-to-play-list {
@@ -48,7 +48,7 @@
 
 @include media(desktop) {
   .how-to-play-section {
-    margin-top: 160px;
+    padding-top: 160px;
   }
 
   .how-to-play-list {
