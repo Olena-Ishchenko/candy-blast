@@ -6,7 +6,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 32px;
   padding-right: 46px;
   width: 100%;
@@ -91,21 +92,22 @@
 /* Вміст модалки */
 .modal-content {
   background-color: white;
-  margin: 138px 32px;
+  margin: 138px auto;
   padding: 40px 50px;
   border-radius: 8px;
   width: 256px;
   text-align: center;
+  position: relative;
 }
 
 /* Кнопка закриття */
 .close-btn {
   float: right;
   cursor: pointer;
-  position: fixed;
-  top: 153px;
+  position: absolute;
+  top: 15px;
   right: 57px;
-  z-index: 999;
+  right: 20px;
 }
 .close-svg {
   width: 12px;
@@ -121,6 +123,10 @@
   align-items: center;
   gap: 18px;
   letter-spacing: -0.03em;
+}
+
+.modal-nav-text {
+  color: #43297a;
 }
 
 .modal-nav-text:hover,
@@ -156,9 +162,12 @@
     width: 187px;
     padding: 22px 0;
     text-align: center;
+    letter-spacing: -0.03em;
+    color: #43297a;
   }
   .ih-header-container {
-    padding-top: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 80px;
     padding-right: 80px;
   }
@@ -177,4 +186,12 @@
 
   box-shadow: 0 1px 1px 0 rgba(247, 49, 150, 0.1);
   background: #fcd1ea;
+}
+
+.menu-link {
+  font-weight: normal;
+}
+
+.menu-link.active {
+  font-weight: bold;
 }

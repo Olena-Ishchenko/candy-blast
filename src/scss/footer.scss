@@ -52,6 +52,14 @@
   margin-bottom: 16px;
 }
 
+.footer-link:active {
+  font-weight: bold;
+}
+
+.footer-link.active {
+  font-weight: bold;
+}
+
 @include media(desktop) {
   .footer-text-policy {
     order: 2;
@@ -61,7 +69,7 @@
   }
   .footer-item {
     margin-bottom: 32px;
-    margin-top: 90px;
+    margin-top: 80px;
   }
   .logo-footer {
     width: 77px;

@@ -5,6 +5,7 @@
 
 .google-link {
   height: 48px;
+  width: 256px;
   // margin-top: 40px;
   border-radius: 8px;
   background-color: #fff;
@@ -25,7 +26,7 @@
 
 @include media(desktop) {
   .google-link {
-    max-width: 406px;
+    width: 406px;
     height: 84px;
   }
 

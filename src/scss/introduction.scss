@@ -46,6 +46,10 @@
   margin-bottom: 40px;
 }
 
+.terms .link-terms {
+  font-weight: 600;
+}
+
 @include media(desktop) {
   .introduction-arrow {
     width: 26px;
