@@ -6,6 +6,11 @@
   position: fixed;
 }
 
+.icon-back-arrow:hover,
+.icon-back-arrow:focus {
+  box-shadow: 4px 4px 8px 0 rgba(247, 49, 150, 0.5);
+}
+
 .privacy-container {
   position: relative;
 }
