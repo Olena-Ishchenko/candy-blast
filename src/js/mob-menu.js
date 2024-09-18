@@ -27,5 +27,6 @@ window.onclick = function (event) {
 listItems.forEach(function (item) {
   item.onclick = function () {
     modal.style.display = 'none';
+    document.body.classList.remove('body-no-scroll');
   };
 });
