@@ -6,17 +6,20 @@ const listItems = document.querySelectorAll('.modal-item');
 // Відкрити модалку
 openModalBtn.onclick = function () {
   modal.style.display = 'block';
+  document.body.classList.add('body-no-scroll');
 };
 
 // Закрити модалку
 closeModalBtn.onclick = function () {
   modal.style.display = 'none';
+  document.body.classList.remove('body-no-scroll');
 };
 
 // Закрити модалку при кліку поза її межами
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = 'none';
+    document.body.classList.remove('body-no-scroll');
   }
 };
 

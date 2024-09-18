@@ -2,15 +2,20 @@
 }
 .introduction-arrow {
   width: 12px;
-  height: 14px;
+  height: 24px;
   fill: $_title_color;
-  position: absolute;
   left: 10px;
   position: fixed;
   top: 45px;
   left: 10px;
   z-index: 5;
 }
+
+.introduction-arrow:hover,
+.introduction-arrow:focus {
+  box-shadow: 4px 4px 8px 0 rgba(247, 49, 150, 0.5);
+}
+
 .candy-introduction {
   display: flex;
   justify-content: center;
@@ -52,10 +57,10 @@
 
 @include media(desktop) {
   .introduction-arrow {
-    width: 26px;
-    height: 26px;
+    width: 24px;
+    height: 48px;
     top: 102px;
-    left: 102px;
+    left: 58px;
   }
   .introduction-container {
     padding-left: 189px;
