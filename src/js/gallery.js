@@ -18,7 +18,7 @@ const swiperParams = {
 
     1280: {
       slidesPerView: 3,
-      spaceBetween: 14,
+      spaceBetween: 10,
     },
   },
 

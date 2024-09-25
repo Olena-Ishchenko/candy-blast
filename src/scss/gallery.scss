@@ -48,6 +48,7 @@
 
   .swiper-gallery {
     margin-top: 80px;
+    width: 1200px;
   }
 
   .gallery-img {
@@ -55,11 +56,11 @@
   }
 
   .swiper-button-prev::after {
-    right: 40px;
+    right: 45px;
   }
 
   .swiper-button-next::after {
-    left: 25px;
+    left: 45px;
   }
 
   .gallery-container {
