@@ -83,19 +83,23 @@
   }
 
   .advantages-item {
-    padding: 32px 16px;
-    width: 624px;
+    padding: 32px 10px;
+    width: 600px;
+  }
+
+  .advantages-item:nth-child(even) {
+    align-self: flex-start;
   }
 
   .advantages-text-container {
-    width: 508px;
+    width: 488px;
   }
 
   .advantages-list {
     margin-top: 80px;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 24px;
     height: 912px;
     margin-bottom: 170px;
   }

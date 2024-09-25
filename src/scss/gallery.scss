@@ -51,6 +51,19 @@
   }
 
   .gallery-img {
-    width: 405px;
+    width: 385px;
+  }
+
+  .swiper-button-prev::after {
+    right: 40px;
+  }
+
+  .swiper-button-next::after {
+    left: 25px;
+  }
+
+  .gallery-container {
+    padding-left: 25px;
+    padding-right: 20px;
   }
 }

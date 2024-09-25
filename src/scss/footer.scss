@@ -77,6 +77,11 @@
 }
 
 @include media(desktop) {
+  .footer-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .footer-text-policy {
     order: 2;
   }
